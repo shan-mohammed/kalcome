@@ -1,0 +1,139 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+
+}
+.custom-color{
+  Background-color:rgb(123, 123, 231);
+color: #7c2d12;
+}
+.navbar a:hover {
+    color: blue !important;
+}
+.banner-img{
+    height: 150px;
+    object-fit: cover;
+}
+/* .hero-section{
+    flex-direction: column;
+} */
+.hero-section {
+    height: 400px;
+    position: relative;
+}
+
+/* Common figure style */
+.hero-section figure {
+    position: absolute;
+    text-align: center;
+}
+
+/* Main Image */
+.main-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.main-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Left Image */
+.left-box {
+    top: 20px;
+    left: 10%;
+}
+
+.left-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Right Image */
+.right-box {
+    top: 20px;
+    right: 10%;
+}
+
+.right-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Caption */
+figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #222;
+}
+.hero-section h2{
+   position: absolute;
+   bottom: 20px;
+   right:50%;
+   transform:translate(50%) ;
+}
+#image .card{
+     box-shadow: rgba(0,0,0,0.60) 0px 5px 15px ;
+    border:solid 1px burlywood;
+  margin-bottom: 2rem;
+  margin-top:2rem;
+  border-radius: 10px;
+}
+#image .card:hover{
+        transform: scale(1.05);
+    transition:transform 0.5s;
+}
+
+/* 📱 Mobile Fix */
+@media (min-width:768px) {
+   .other-service .card {
+      width: 100%;
+      max-width: 720px !;   
+   }
+}
+@media (max-width: 768px) {
+
+    .main-box img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .left-box img,
+    .right-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .left-box {
+        left: 5%;
+    }
+
+    .right-box {
+        right: 5%;
+    }
+}
+@media (max-width:576px) {
+    .banner-img{
+        width:350px;
+        height:auto;
+        margin-bottom: 2px;
+    }
+    .hero-section{
+        margin-top:0 px;
+        background-color:rgb(163, 172, 241);
+    
+    }
+    
+   
+}
+ 
